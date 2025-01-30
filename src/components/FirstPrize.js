@@ -23,24 +23,29 @@ function FirstPrize() {
   const toggleModal = () => {
     setShowModal(!showModal);
     setAnnounceWinner(!announceWinner);
+    setIsCardVisible(!isCardVisible)
   };
 
   const handleCardClick = () => {
     setIsCardVisible(false);
-    setIsSpinnerVisible(true);
+    setShowModal(!showModal);
+     setShowWinners(true);
+     setIsShowing(true);
   };
 
   const winnersList = [
-    { url: "/requirements/files/first_prize.gif", title: "beach" },
+    { url: "/requirements/final-files/2-gram-gold/1.jpg", title: "beach" },
+    { url: "/requirements/final-files/2-gram-gold/2.jpg", title: "beach" },
+    { url: "/requirements/final-files/2-gram-gold/3.jpg", title: "beach" },
   ];
 
-  const handleAnnounceImage = () => {
-    setShowWinners(true);
-    setIsShowing(true);
-    setAnnounceWinner(false);
+  // const handleAnnounceImage = () => {
+  //   setShowWinners(true);
+  //   setIsShowing(true);
+  //   setAnnounceWinner(false);
 
-    setShowModal(!showModal);
-  };
+  //   setShowModal(!showModal);
+  // };
 
   return (
     <div className="grandpage">
@@ -57,7 +62,7 @@ function FirstPrize() {
       </div>
       <div className="grandPrize">
         <img
-          src="/requirements/files/first-winner-up.gif"
+          src="/requirements/final-files/2-gram-coin-up.gif"
           className="grandprize-image"
           alt=""
         />
@@ -65,21 +70,21 @@ function FirstPrize() {
       <div className="grandprize-down-portion">
         <img
           className="grand-down-image"
-          src="/requirements/files/first-winner-down.gif"
+          src="/requirements/final-files/2-gram-coin-down.gif"
           alt=""
         />
         <div className="items-container">
           {isCardVisible && (
             <motion.div
-              initial={{ y: "-100vh" }}
+              initial={{ y: "-70vh" }}
               animate={{ y: "0" }}
-              transition={{ delay: "0.6" }}
+              transition={{ delay: "0.2" }}
               className="grand-page-card-container"
             >
               <div className="card" onClick={handleCardClick}>
                 <div className="card-image-container">
                   <img
-                    src="/requirements/files/first-card.gif"
+                    src="/requirements/final-files/2-gram-coin-card.gif"
                     className="card-image"
                     alt=""
                   />
@@ -87,7 +92,7 @@ function FirstPrize() {
               </div>
             </motion.div>
           )}
-          {isSpinnerVisible && (
+          {/* {isSpinnerVisible && (
             <Spinner
               isSpinnerVisible={isSpinnerVisible}
               setIsSpinnerVisible={setIsSpinnerVisible}
@@ -96,8 +101,8 @@ function FirstPrize() {
               setRevealPrize={setRevealPrize}
               setIsShowing={setIsShowing}
             />
-          )}
-          {announceWinner && (
+          )} */}
+          {/* {announceWinner && (
             <motion.div
               // initial={{rotate:"180"}}
               // animate={{rotate:"0"}}
@@ -111,7 +116,7 @@ function FirstPrize() {
                 alt="grand-prize-announcement"
               />
             </motion.div>
-          )}
+          )} */}
 
           {/* {
             showWinners && (

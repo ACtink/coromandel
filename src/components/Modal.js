@@ -26,8 +26,8 @@ function Modal({ showModal, setShowModal, toggleModal, winnersList }) {
             <SliderContainer winnersList={winnersList} />
 
             <motion.button
-            whileHover={{scale:"1.1"}}
-            whileTap={{scale:"0.8"}}
+            // whileHover={{scale:"1.1"}}
+            // whileTap={{scale:"0.8"}}
         
             
             className="modal-close-button" onClick={toggleModal}>

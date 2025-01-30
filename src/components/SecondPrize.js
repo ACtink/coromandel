@@ -15,7 +15,22 @@ function SecondPrize() {
   const [announceWinner, setAnnounceWinner] = useState(false);
 
   const winnersList = [
-    { url: "/requirements/files/first_prize.gif", title: "beach" },
+    { url: "/requirements/final-files/1-gram-gold/1.jpg", title: "beach" },
+    { url: "/requirements/final-files/1-gram-gold/2.jpg", title: "beach" },
+    { url: "/requirements/final-files/1-gram-gold/3.jpg", title: "beach" },
+    { url: "/requirements/final-files/1-gram-gold/4.jpg", title: "beach" },
+    { url: "/requirements/final-files/1-gram-gold/5.jpg", title: "beach" },
+    { url: "/requirements/final-files/1-gram-gold/6.jpg", title: "beach" },
+    { url: "/requirements/final-files/1-gram-gold/7.jpg", title: "beach" },
+    { url: "/requirements/final-files/1-gram-gold/8.jpg", title: "beach" },
+    { url: "/requirements/final-files/1-gram-gold/9.jpg", title: "beach" },
+    { url: "/requirements/final-files/1-gram-gold/10.jpg", title: "beach" },
+    { url: "/requirements/final-files/1-gram-gold/11.jpg", title: "beach" },
+    { url: "/requirements/final-files/1-gram-gold/12.jpg", title: "beach" },
+    { url: "/requirements/final-files/1-gram-gold/13.jpg", title: "beach" },
+    { url: "/requirements/final-files/1-gram-gold/14.jpg", title: "beach" },
+    { url: "/requirements/final-files/1-gram-gold/15.jpg", title: "beach" },
+    { url: "/requirements/final-files/1-gram-gold/16.jpg", title: "beach" },
   ];
 
   const toggleElement = () => {
@@ -25,33 +40,42 @@ function SecondPrize() {
   const [showModal, setShowModal] = useState(false);
 
   const toggleModal = () => {
-    setShowModal(!showModal);
-    setAnnounceWinner(!announceWinner);
+   setShowModal(!showModal);
+   setAnnounceWinner(!announceWinner);
+   setIsCardVisible(!isCardVisible);
   };
 
   const handleCardClick = () => {
-    setIsCardVisible(false);
-    setIsSpinnerVisible(true);
+   setIsCardVisible(false);
+   setShowModal(!showModal);
+   setShowWinners(true);
+   setIsShowing(true);
   };
 
-  const handleAnnounceImage = () => {
-    setRevealPrize(false);
-    setShowWinners(true);
-    setIsShowing(true);
-    setAnnounceWinner(false);
-    setShowModal(!showModal);
-  };
+  // const handleAnnounceImage = () => {
+  //   setRevealPrize(false);
+  //   setShowWinners(true);
+  //   setIsShowing(true);
+  //   setAnnounceWinner(false);
+  //   setShowModal(!showModal);
+  // };
 
   return (
     <div className="grandpage">
       <div className="nav-buttons-container">
         <Link to={"/"}>
-          <button className="home-button medium-home-button">Home</button>
-        </Link>
+                  <motion.button
+                    whileHover={{ scale: "1.2", color: "yellow" }}
+                    whileTap={{ scale: "0.9" }}
+                    className="home-button medium-home-button"
+                  >
+                    Home
+                  </motion.button>
+                   </Link>
       </div>
       <div className="grandPrize">
         <img
-          src="/requirements/files/second-winner-up.gif"
+          src="/requirements/final-files/1-gram-coin-up.gif"
           className="grandprize-image"
           alt=""
         />
@@ -59,21 +83,21 @@ function SecondPrize() {
       <div className="grandprize-down-portion">
         <img
           className="grand-down-image"
-          src="/requirements/files/second-winner-down.gif"
+          src="/requirements/final-files/1-gram-coin-down.gif"
           alt=""
         />
         <div className="items-container">
           {isCardVisible && (
             <motion.div
-              initial={{ y: "-100vh" }}
+              initial={{ y: "-70vh" }}
               animate={{ y: "0" }}
-              transition={{ delay: "0.6" }}
+              transition={{ delay: "0.2" }}
               className="grand-page-card-container"
             >
               <div className="card" onClick={handleCardClick}>
                 <div className="card-image-container">
                   <img
-                    src="/requirements/files/second-card.gif"
+                    src="/requirements/final-files/1-gram-coin-card.gif"
                     className="card-image"
                     alt=""
                   />
@@ -81,7 +105,7 @@ function SecondPrize() {
               </div>
             </motion.div>
           )}
-          {isSpinnerVisible && (
+          {/* {isSpinnerVisible && (
             <div>
               <Spinner
                 isSpinnerVisible={isSpinnerVisible}
@@ -93,8 +117,8 @@ function SecondPrize() {
                 setAnnounceWinner={setAnnounceWinner}
               />
             </div>
-          )}
-          {announceWinner && (
+          )} */}
+          {/* {announceWinner && (
             <div
               className={`transition-element ${isShowing ? "show" : ""}`}
               onClick={handleAnnounceImage}
@@ -105,7 +129,7 @@ function SecondPrize() {
                 alt="grand-prize-announcement"
               />
             </div>
-          )}
+          )} */}
 
           {/* {
             showWinners && (

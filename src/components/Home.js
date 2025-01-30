@@ -6,23 +6,23 @@ import { ShowNewGrandPageContext } from "./GrandPageContext";
 import { motion } from "framer-motion";
 
 function Home() {
-  const [
-    showSecondGrandPage,
-    setShowSecondGrandPage,
-    showGrandPage2,
-    setShowgrandPage2,
-  ] = useContext(ShowNewGrandPageContext);
+  // const [
+  //   showSecondGrandPage,
+  //   setShowSecondGrandPage,
+  //   showGrandPage2,
+  //   setShowgrandPage2,
+  // ] = useContext(ShowNewGrandPageContext);
 
-  // if(showSecondGrandPage===false){
-  //   setShowSecondGrandPage(true)
+  // // if(showSecondGrandPage===false){
+  // //   setShowSecondGrandPage(true)
+  // // }
+
+  // // if(showGrandPage2===false){
+  // //   setShowgrandPage2(true)
+  // // }
+
+  // if (localStorage.getItem("setShowSecondGrandPage") === true) {
   // }
-
-  // if(showGrandPage2===false){
-  //   setShowgrandPage2(true)
-  // }
-
-  if (localStorage.getItem("setShowSecondGrandPage") === true) {
-  }
 
   return (
     <>
@@ -30,14 +30,20 @@ function Home() {
         <div className="home">
           <div className="nav-buttons-container">
             <Link to={"/"}>
-              <button className="home-button medium-home-button">Home.</button>
-            </Link>
+                              <motion.button
+                                whileHover={{ scale: "1.2", color: "yellow" }}
+                                whileTap={{ scale: "0.9" }}
+                                className="home-button medium-home-button"
+                              >
+                                Home
+                              </motion.button>
+                               </Link>
             {/* <Link to={"/"} >
         <button className="home-button medium-home-button" >Reset</button>
         </Link> */}
           </div>
           <img
-            src="/requirements/files/home-up.gif"
+            src="/requirements/final-files/home-up.gif"
             className="banner-image"
             alt=""
           />
@@ -47,15 +53,15 @@ function Home() {
         <div className="card-container">
           <img
             className="home-down-image"
-            src="/requirements/files/home-down.gif"
+            src="/requirements/final-files/home-down.gif"
             alt=""
           />
-       
+
           <Link to="/firstprize" className="button-link">
             <div className="card">
               <div className="card-image-container">
                 <img
-                  src="/requirements/files/first-card.gif"
+                  src="/requirements/final-files/2-gram-coin-card.gif"
                   className="card-image"
                   alt=""
                 />
@@ -69,7 +75,7 @@ function Home() {
             <div className="card">
               <div className="card-image-container">
                 <img
-                  src="/requirements/files/second-card.gif"
+                  src="/requirements/final-files/1-gram-coin-card.gif"
                   className="card-image"
                   alt=""
                 />
@@ -80,10 +86,9 @@ function Home() {
           </button></Link> */}
             </div>
           </Link>
-        
+
           {/* <div className="inner-container"> */}
-        
-       
+
           {/* </div> */}
         </div>
 

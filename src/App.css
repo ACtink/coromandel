@@ -116,7 +116,7 @@
   width: 200px;
   height: 300px;
   background-color: #f0f0f0;
-  border: 15px solid transparent; /* Initial transparent border */
+  border: 25px solid transparent; /* Initial transparent border */
   border-radius: 10px;
   position: relative;
   cursor: pointer;
@@ -131,7 +131,7 @@
 
   animation: glow 1s infinite alternate,
     floatingAnimation 1s infinite alternate ease-in-out;
-  border: 2px solid #00aaff; /* Glow color */
+  border: 3px solid #00aaff; /* Glow color */
 }
 /* .card::before {
   content: '';
@@ -150,7 +150,7 @@
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0px 10px 20px rgba(234, 38, 38, 0.3);
   animation: glow 4s infinite alternate;
-  border: 2px solid #fbff00; /* Glow color */
+  border: 5px solid #fbff00; /* Glow color */
 }
 .card:hover::before {
   transform: scale(1);
@@ -255,7 +255,7 @@
 }
 
 .button:active {
-  transform: scale(0.95) translate(-50%, -150%);
+  transform: scale(0.70) translate(-50%, -150%);
   box-shadow: none;
 }
 
@@ -482,7 +482,7 @@
   height: 80px;
   width: 350px;
   top: 36px;
-  left: 175px;
+  left: 15%;
   display: flex;
   justify-content: flex-start;
   gap: 10px;
@@ -502,7 +502,9 @@
 .medium-home-button {
   display: inline-block;
   /* padding: 12px 2px; */
-  border: none;
+  border: 3px solid #00aaff;
+
+
   border-radius: 20px;
   font-size: 16px;
   color: #161212;
@@ -510,22 +512,26 @@
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  background-image: linear-gradient(45deg, #cca8a8, #d0ac88, #655c6f, #cccbd9, #4a4a89, #b082d4);
+
+background-image: linear-gradient(45deg, #f2dede, #f6e5d3, #d9d4e3, #f0eff5, #d6d6f0, #e8d8f7);
+color: #2c2c2c; /* Dark text color for contrast */
 
   transition: background-color 0.3s, transform 0.3s;
 }
 
 /* Hover effect */
-.medium-home-button:hover {
+/* .medium-home-button:hover {
   background-image: linear-gradient(45deg, #ff6b6b, #3e625e);
-}
+} */
 
 /* Active effect */
-.medium-home-button:active {
-  transform: scale(0.95);
+/* .medium-home-button:active {
+  transform: scale(0.70);
   color: #f6f2f2;
   font-weight: 900;
-}
+} */
+
+
 
 
 .outer{
@@ -593,7 +599,7 @@
 .container-modal{
   min-width: 80vw;
   min-height: 70vh;
-  background-color: #aab2f9;
+  background-color: #dfe1f4;
 
   
  
@@ -626,11 +632,51 @@
 
 }
 
-.modal-close-button{
+/* .modal-close-button{
   padding: 20px;
   background-color: cadetblue;
   border-radius: 3px;
   cursor: pointer;
   border: 2px solid firebrick;
   margin-bottom: 2px;
+} */
+
+.modal-close-button {
+  padding: 20px; /* Dimensions retained */
+  background-image: linear-gradient(45deg, #5f9ea0, #7ec8c5); /* Stylish gradient */
+  border-radius: 8px; /* Softer rounded edges */
+  cursor: pointer;
+  border: 2px solid #b22222; /* Firebrick border for contrast */
+  margin-bottom: 2px; /* Spacing retained */
+  color: rgb(13, 8, 8); /* Text color for contrast */
+  font-weight: bold; /* Stylish text */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* Modern font stack */
+  text-transform: uppercase; /* Adds emphasis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.modal-close-button:hover {
+  background-image: linear-gradient(45deg, #7ec8c5, #5f9ea0); /* Reverse gradient on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Slightly deeper shadow */
+}
+
+.modal-close-button:active {
+  transform: scale(0.95); /* Subtle click effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
+
+
+
+
+.medium-home-button:hover {
+  background-image: linear-gradient(45deg, #ffa8a8, #88b4af); /* Lighter gradient for hover */
+  transition: background-image 0.3s ease, transform 0.3s ease;
+}
+
+.medium-home-button:active {
+  transform: scale(0.95); /* Subtle scaling effect */
+  color: #2c2c2c; /* Dark text color for readability */
+  font-weight: bold; /* Consistent styling */
+  transition: transform 0.2s ease;
 }
