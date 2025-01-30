@@ -31,7 +31,7 @@ function FirstPrize() {
   };
 
   const winnersList = [
-    { url: "/coromandel_winner_posters/first_prize.gif", title: "beach" },
+    { url: "/requirements/files/first_prize.gif", title: "beach" },
   ];
 
   const handleAnnounceImage = () => {
@@ -57,7 +57,7 @@ function FirstPrize() {
       </div>
       <div className="grandPrize">
         <img
-          src="/requirements/backgrounds/first-winner-up.gif"
+          src="/requirements/files/first-winner-up.gif"
           className="grandprize-image"
           alt=""
         />
@@ -65,7 +65,7 @@ function FirstPrize() {
       <div className="grandprize-down-portion">
         <img
           className="grand-down-image"
-          src="/requirements/backgrounds/first-winner-down.gif"
+          src="/requirements/files/first-winner-down.gif"
           alt=""
         />
         <div className="items-container">
@@ -78,7 +78,11 @@ function FirstPrize() {
             >
               <div className="card" onClick={handleCardClick}>
                 <div className="card-image-container">
-                  <img src="2.gif" className="card-image" alt="" />
+                  <img
+                    src="/requirements/files/first-card.gif"
+                    className="card-image"
+                    alt=""
+                  />
                 </div>
               </div>
             </motion.div>
@@ -97,8 +101,7 @@ function FirstPrize() {
             <motion.div
               // initial={{rotate:"180"}}
               // animate={{rotate:"0"}}
-              
-             
+
               className={`transition-element ${isShowing ? "show" : ""}`}
               onClick={handleAnnounceImage}
             >

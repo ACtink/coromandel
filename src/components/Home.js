@@ -26,9 +26,7 @@ function Home() {
 
   return (
     <>
-      <div className="outer"
-
-       >
+      <div className="outer">
         <div className="home">
           <div className="nav-buttons-container">
             <Link to={"/"}>
@@ -39,7 +37,7 @@ function Home() {
         </Link> */}
           </div>
           <img
-            src="/requirements/backgrounds/home-up.gif"
+            src="/requirements/files/home-up.gif"
             className="banner-image"
             alt=""
           />
@@ -49,30 +47,18 @@ function Home() {
         <div className="card-container">
           <img
             className="home-down-image"
-            src="/requirements/backgrounds/home-down.gif"
+            src="/requirements/files/home-down.gif"
             alt=""
           />
-          <Link
-            to={
-              showSecondGrandPage || showGrandPage2
-                ? "/secondgrandprize"
-                : "/grandprize"
-            }
-            className="button-link"
-          >
-            <div className="card">
-              <div className="card-image-container">
-                <img src="1.gif" className="card-image" alt="" />
-              </div>
-              {/* <Link to="/grandprize" className="button-link"><button class="button">
-            <span>Grand Prize</span>
-          </button></Link>  */}
-            </div>
-          </Link>
+       
           <Link to="/firstprize" className="button-link">
             <div className="card">
               <div className="card-image-container">
-                <img src="2.gif" className="card-image" alt="" />
+                <img
+                  src="/requirements/files/first-card.gif"
+                  className="card-image"
+                  alt=""
+                />
               </div>
               {/* <Link to="/1stPrize" className="button-link"><button class="button">
             <span>1st Prize</span>
@@ -82,7 +68,11 @@ function Home() {
           <Link to="/secondprize" className="button-link">
             <div className="card">
               <div className="card-image-container">
-                <img src="3.gif" className="card-image" alt="" />
+                <img
+                  src="/requirements/files/second-card.gif"
+                  className="card-image"
+                  alt=""
+                />
               </div>
 
               {/* <Link to="/2ndPrize" className="button-link"><button class="button">
@@ -90,37 +80,10 @@ function Home() {
           </button></Link> */}
             </div>
           </Link>
-          <Link to="/thirdprize" className="button-link">
-            <div className="card">
-              <div className="card-image-container">
-                <img src="4.gif" className=" card-image" alt="" />
-              </div>
-              {/* <Link to="/3rdPrize" className="button-link"><button class="button">
-            <span>3rd Prize</span>
-          </button></Link> */}
-            </div>
-          </Link>
+        
           {/* <div className="inner-container"> */}
-          <Link to="/fourthprize" className="button-link">
-            <div className="card">
-              <div className="card-image-container">
-                <img src="5.gif" className="card-image" alt="" />
-              </div>
-              {/* <Link to="/4thPrize" className="button-link"><button class="button">
-              <span>4rth Prize</span>
-            </button></Link> */}
-            </div>
-          </Link>
-          <Link to="/fifthprize" className="button-link">
-            <div className="card">
-              <div className="card-image-container">
-                <img src="6.gif" className=" card-image" alt="" />
-              </div>
-              {/* <Link to="/5thPrize" className="button-link"><button class="button">
-              <span>5th Prize</span>
-            </button></Link> */}
-            </div>
-          </Link>
+        
+       
           {/* </div> */}
         </div>
 

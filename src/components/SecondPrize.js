@@ -15,7 +15,7 @@ function SecondPrize() {
   const [announceWinner, setAnnounceWinner] = useState(false);
 
   const winnersList = [
-    { url: "/coromandel_winner_posters/second_prize.gif", title: "beach" },
+    { url: "/requirements/files/first_prize.gif", title: "beach" },
   ];
 
   const toggleElement = () => {
@@ -51,7 +51,7 @@ function SecondPrize() {
       </div>
       <div className="grandPrize">
         <img
-          src="/requirements/backgrounds/second-winner-up.gif"
+          src="/requirements/files/second-winner-up.gif"
           className="grandprize-image"
           alt=""
         />
@@ -59,7 +59,7 @@ function SecondPrize() {
       <div className="grandprize-down-portion">
         <img
           className="grand-down-image"
-          src="/requirements/backgrounds/second-winner-down.gif"
+          src="/requirements/files/second-winner-down.gif"
           alt=""
         />
         <div className="items-container">
@@ -72,7 +72,11 @@ function SecondPrize() {
             >
               <div className="card" onClick={handleCardClick}>
                 <div className="card-image-container">
-                  <img src="3.gif" className="card-image" alt="" />
+                  <img
+                    src="/requirements/files/second-card.gif"
+                    className="card-image"
+                    alt=""
+                  />
                 </div>
               </div>
             </motion.div>
