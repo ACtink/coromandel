@@ -32,11 +32,7 @@ function Home() {
         <div className="home">
           <div className="nav-buttons-container">
             <Link to={"/"}>
-<<<<<<< HEAD
               <button className="home-button medium-home-button">Home.</button>
-=======
-              <button className="home-button medium-home-button">Home</button>
->>>>>>> 8830cddaf258d510281477fe4deb22f69430be80
             </Link>
             {/* <Link to={"/"} >
         <button className="home-button medium-home-button" >Reset</button>
