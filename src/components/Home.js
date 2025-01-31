@@ -43,7 +43,7 @@ function Home() {
         </Link> */}
           </div>
           <img
-            src="/requirements/final-files/home-up.gif"
+            src="/requirements/final-files/new-home-up.gif"
             className="banner-image"
             alt=""
           />
@@ -53,7 +53,7 @@ function Home() {
         <div className="card-container">
           <img
             className="home-down-image"
-            src="/requirements/final-files/home-down.gif"
+            src="/requirements/final-files/new-home-down.gif"
             alt=""
           />
 

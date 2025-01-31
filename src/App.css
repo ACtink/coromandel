@@ -85,7 +85,7 @@
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 35px;
   justify-content: space-evenly;
   overflow: hidden;
    /* background: #780206; 
@@ -448,7 +448,7 @@
 .yet-to-implement-div{
   height: 100vh;
   width: 100%;
-  background-image: url("/public/requirements/backgrounds/first-winner-down.gif");
+  /* background-image: url("/public/requirements/backgrounds/first-winner-down.gif"); */
 }
 
 .yet-to-implement-div h1{
@@ -482,7 +482,7 @@
   height: 80px;
   width: 350px;
   top: 36px;
-  left: 15%;
+  left: 21.5%;
   display: flex;
   justify-content: flex-start;
   gap: 10px;
